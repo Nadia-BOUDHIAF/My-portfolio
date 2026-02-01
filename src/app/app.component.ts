@@ -13,11 +13,10 @@ import { WhatsappButtonComponent } from './components/shared/whatsapp-button/wha
     NavbarComponent,
     FooterComponent,
     AppScrollToTopComponent,
-    WhatsappButtonComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Portfolio of Javeed Ishaq - Software Developer';
+  title = 'Portfolio of Nadia Boudhiaf - Software Engineer Full-stack developer';
 }

@@ -1,8 +1,4 @@
 export const skillsData = [
-  'Flutter',
-  'Android',
-  'Kotlin',
-  'Dart',
   'Java',
   'Spring-Boot',
   'Javascript',
@@ -18,11 +14,11 @@ export const skillsData = [
   'AWS',
   'Bootstrap',
   'Docker',
+  'Kubernetes',
   'Figma',
-  'Firebase',
   'MaterialUI',
   'Nginx',
-  'Strapi'
+  'Git'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
@@ -31,10 +27,10 @@ export const skillsData = [
 
 // AVAILABLE SKILLS
 
-/* 
+/*
   HTML
   CSS
-  JS 
+  JS
   React
   Next JS
   Nuxt JS

@@ -7,3 +7,13 @@
         visibility: hidden;
     }
 }
+
+.name {
+    background-image: linear-gradient(90deg, oklch(63.32% .24 31.68) 0%, oklch(69.02% .277 332.77) 50%, oklch(53.18% .28 296.97) 100%);
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    font-weight: 500;
+    box-shadow: none;
+    position: relative;
+}

@@ -22,7 +22,6 @@ import { BlogService } from '@/core/services/blog.service';
     SkillsComponent,
     ProjectsComponent,
     EducationComponent,
-    BlogComponent,
     ContactComponent
   ],
   templateUrl: './home.component.html',
