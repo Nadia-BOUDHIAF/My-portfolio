@@ -4,6 +4,7 @@ import { HeroSectionComponent } from '../components/home/hero-section/hero-secti
 import { AboutComponent } from '../components/home/about/about.component';
 import { ExperienceComponent } from '../components/home/experience/experience.component';
 import { SkillsComponent } from '../components/home/skills/skills.component';
+import { CertificationsComponent } from '../components/home/certifications/certifications.component';
 import { ProjectsComponent } from '../components/home/projects/projects.component';
 import { EducationComponent } from '../components/home/education/education.component';
 import { BlogComponent } from '../components/home/blog/blog.component';
@@ -20,7 +21,7 @@ import { BlogService } from '@/core/services/blog.service';
     AboutComponent,
     ExperienceComponent,
     SkillsComponent,
-    ProjectsComponent,
+    CertificationsComponent,
     EducationComponent,
     ContactComponent
   ],

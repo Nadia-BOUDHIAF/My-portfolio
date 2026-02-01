@@ -1,0 +1,61 @@
+<div id="certifications" class="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+  <img src="assets/section.svg" alt="Section" class="absolute top-0 -z-10 w-full opacity-80">
+
+  <div class="flex justify-center my-5 lg:py-8">
+    <div class="flex items-center">
+      <span class="w-24 h-[2px] bg-[#1a1443]"></span>
+      <span class="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+        Certifications
+      </span>
+      <span class="w-24 h-[2px] bg-[#1a1443]"></span>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 pb-6 lg:pb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 cert-grid">
+      <div
+        *ngFor="let cert of certifications; let i = index"
+        class="cert-card group"
+        [style.--delay]="i"
+      >
+        <div class="cert-inner">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="cert-logo">
+                <ng-container *ngIf="cert.logo; else badgeLogo">
+                  <img [src]="cert.logo" [alt]="cert.issuer" width="36" height="36" />
+                </ng-container>
+                <ng-template #badgeLogo>
+                  <span class="cert-badge">{{ cert.badge }}</span>
+                </ng-template>
+              </div>
+              <div>
+                <p class="text-sm text-[#c7c4ff]">{{ cert.issuer }}</p>
+                <p class="text-xs text-[#8a86b5]">Issued {{ cert.issued }}</p>
+              </div>
+            </div>
+            <a
+              class="cert-pill"
+              *ngIf="cert.showCredential && cert.credentialUrl"
+              [href]="cert.credentialUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Show credential
+            </a>
+          </div>
+
+          <div class="mt-5">
+            <h3 class="text-lg sm:text-xl font-semibold text-white tracking-wide">
+              {{ cert.title }}
+            </h3>
+          </div>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span *ngFor="let skill of cert.skills" class="cert-skill">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

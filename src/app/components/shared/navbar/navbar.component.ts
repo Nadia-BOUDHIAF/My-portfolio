@@ -14,7 +14,7 @@ export class NavbarComponent {
     { path: '/#about', label: 'ABOUT' },
     { path: '/#experience', label: 'EXPERIENCE' },
     { path: '/#skills', label: 'SKILLS' },
+    { path: '/#certifications', label: 'CERTIFICATES' },
     { path: '/#education', label: 'EDUCATION' },
-    { path: '/#education', label: 'CERTIFICATES' }
   ];
 }
